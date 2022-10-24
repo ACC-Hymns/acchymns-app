@@ -129,3 +129,4 @@ dist
 .idea
 platforms
 www
+.DS_Store
