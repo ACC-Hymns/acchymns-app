@@ -1,0 +1,4 @@
+[submodule "acchymns-web"]
+	path = acchymns-web
+	url = https://github.com/ACC-Hymns/acchymns-web.git
+	branch = new-books-url-params
