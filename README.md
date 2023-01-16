@@ -19,7 +19,7 @@ git submodule update --init
 Copy selectively using python script
 ```bash
 python copy.py
-``1
+```
 
 ## Build for Android
 ```

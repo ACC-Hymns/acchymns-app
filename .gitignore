@@ -131,3 +131,4 @@ platforms
 www
 .DS_Store
 __pycache__
+plugins
