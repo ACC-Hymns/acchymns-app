@@ -16,7 +16,7 @@ if os.path.exists(dest) and os.path.isdir(dest):
 
 # Copy everything except book data
 print("Copying all program data...")
-copytree(src, dest, ignore=ignorePaths([f"{src}/books", ".git", ".gitignore"]))
+copytree(src, dest, ignore=ignorePaths([f"{src}/books", f"{src}/.git", f"{src}/.gitignore"]))
 
 for content in os.scandir(os.path.join(src, "books")):
     tobeDestPath = os.path.join(os.path.abspath(dest), os.path.relpath(content.path, os.path.abspath(src)))
