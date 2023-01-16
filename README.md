@@ -4,11 +4,11 @@ A repository which contains the cordova related code for the ACC Hymns app for t
 
 ## Build Prep
 
-Install [node](https://nodejs.org/en/download/current/).
+Install [node](https://nodejs.org/en/download/current/) & [python](https://www.python.org/downloads/).
 
-Install cordova globally: 
+Install cordova & uglifyjs globally: 
 ```bash
-npm install -g cordova
+npm install -g cordova uglify-js
 ```
 
 Initialize submodule
@@ -16,19 +16,12 @@ Initialize submodule
 git submodule update --init
 ```
 
-Symlink the submodule with the www/ directory
-### Mac/Linux
+Copy selectively using python script
 ```bash
-ln -s acchymns-web www
-```
-
-### Windows
-```bash
-mklink /D www acchymns-web
-```
+python copy.py
+``1
 
 ## Build for Android
-
 ```
 cordova platform add android
 cordova build android
